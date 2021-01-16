@@ -1,9 +1,15 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import { GlobalStyles } from "../components/GlobalStyles";
+import { Layout } from "../components/Layout";
+import { TitleSection } from "../sections/Title";
+import { DetailsSection } from "../sections/practices/Details";
+import { Footer } from "../sections/Footer";
 
-const PageContainer = styled.div``
-
-export const Homepage = (props) => 
-  <PageContainer>
-    <h1>Hello world</h1>
-  </PageContainer>
+export const Homepage = (props) => (
+  <Layout>
+    <GlobalStyles />
+    <TitleSection />
+    <DetailsSection />
+    <Footer />
+  </Layout>
+);

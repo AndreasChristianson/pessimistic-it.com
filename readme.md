@@ -1,3 +1,3 @@
 # static site template
 
-live at https://andreaschristianson.github.io/static-site-template/
+live at https://pessimistic-it.com
