@@ -1,4 +1,4 @@
-import {createGlobalStyle} from 'styled-components'
+import { createGlobalStyle } from 'styled-components'
 import { boltDark, fieldSky, fieldCorn } from '../constants/colors'
 import { mobileModeWidth } from '../constants/measurements'
 
@@ -6,6 +6,10 @@ export const GlobalStyles = createGlobalStyle`
 * {
   margin: 0;
   padding: 0;
+}
+
+a:link, a:active, a:visited{
+  color: inherit;
 }
 
 body {
@@ -22,5 +26,4 @@ html {
       font-size: 12px;
   }
 }
-
 `

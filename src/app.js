@@ -7,11 +7,6 @@ import 'fontsource-open-sans/400.css'
 import ReactDOM from 'react-dom'
 import React from 'react'
 
-import { Homepage } from './pages/Homepage';
+import { Homepage } from './pages/Homepage'
 
-
-
-ReactDOM.render(
-  <Homepage />,
-  document.getElementById('root')
-);
+ReactDOM.render(<Homepage />, document.getElementById('root'))

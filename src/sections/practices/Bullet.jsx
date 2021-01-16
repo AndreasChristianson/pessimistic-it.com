@@ -1,15 +1,15 @@
-import React from "react";
-import styled from "styled-components";
-import { Text, textStyle } from "../../components/Text";
-import { openSans } from "../../constants/fonts";
+import React from 'react'
+import styled from 'styled-components'
+import { textStyle } from '../../components/Text'
+import ReactMarkdown from 'react-markdown'
 
 const ListItem = styled.li`
-  ${textStyle}
-  /* list-style-type: none; */
-  /* list-style-position: inside; */
-  color: ${({ color }) => color};
-`;
+    ${textStyle}
+    color: ${({ color }) => color};
+`
 
-export const Bullet = ({ url, text, textColor }) => (
-  <ListItem color={textColor}>{text}</ListItem>
-);
+export const Bullet = ({ markdown, textColor }) => (
+    <ListItem color={textColor}>
+        <ReactMarkdown>{markdown}</ReactMarkdown>
+    </ListItem>
+)
