@@ -21,18 +21,28 @@ import {
 
 export const practices = [
     {
-        title: 'Quality',
-        image: bolts,
+        title: 'Elegance & Craftsmanship',
+        image: elegance,
+        darkColor: eleganceDark,
+        lightColor: eleganceLight,
         bullets: [
             {
-                markdown: 'Pair on everything',
+                markdown:
+                    '[Extract till you drop](https://sites.google.com/site/unclebobconsultingllc/one-thing-extract-till-you-drop)',
             },
             {
-                markdown: 'Practice BDD & TDD',
+                markdown:
+                    '[Prefer composition](https://en.wikipedia.org/wiki/Composition_over_inheritance)',
+            },
+            {
+                markdown:
+                    'Focus on [naming](https://martinfowler.com/bliki/TwoHardThings.html)',
+            },
+            {
+                markdown:
+                    'Follow [the boy scout rule](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)',
             },
         ],
-        darkColor: boltDark,
-        lightColor: boltLight,
     },
     {
         title: 'Topography',
@@ -40,49 +50,88 @@ export const practices = [
         bullets: [
             {
                 markdown:
-                    "Be mindful of [Conway's law](https://en.wikipedia.org/wiki/Conway%27s_law)",
-            },
-            {
-                markdown: 'Build teams around *products*, not *features*',
+                    'Keep [teams small](https://www.sciencedirect.com/science/article/abs/pii/S0749597812000374)',
             },
             {
                 markdown:
-                    'Engender [psychological safety](https://rework.withgoogle.com/print/guides/5721312655835136/)',
+                    "Be mindful of [Conway's law](https://en.wikipedia.org/wiki/Conway%27s_law)",
+            },
+            {
+                markdown:
+                    'Build teams around [*products*, not *features*](https://martinfowler.com/articles/products-over-projects.html)',
             },
         ],
         darkColor: stumpDark,
         lightColor: stumpLight,
     },
     {
-        title: 'Elegance',
-        image: elegance,
+        title: 'Quality',
+        image: bolts,
+        darkColor: boltDark,
+        lightColor: boltLight,
         bullets: [
             {
-                markdown: 'Make tech debt visible',
+                markdown:
+                    '[Keep development and production as similar as possible](https://12factor.net/dev-prod-parity)',
             },
             {
-                markdown: 'Prefer composition',
+                markdown:
+                    '[Favor immutability](https://alvinalexander.com/scala/scala-idiom-immutable-code-functional-programming-immutability/)',
+            },
+            {
+                markdown: 'Practice BDD & TDD',
+            },
+            {
+                markdown:
+                    '[Everything in one codebase](https://12factor.net/codebase)',
             },
         ],
-        darkColor: eleganceDark,
-        lightColor: eleganceLight,
     },
     {
-        title: 'Culture',
+        title: 'Collaboration',
         image: collaboration,
-        bullets: [],
+        bullets: [
+            {
+                markdown:
+                    'Prefer [face-to-face conversations](https://agilemanifesto.org/principles.html)',
+            },
+            {
+                markdown:
+                    '[Pair](https://martinfowler.com/articles/on-pair-programming.html) on everything',
+            },
+            {
+                markdown: 'todo',
+            },
+        ],
         darkColor: collaborationDark,
         lightColor: collaborationLight,
     },
     {
-        title: '#5',
+        title: 'Culture',
         image: drinks,
-        bullets: [],
+        bullets: [
+            {
+                markdown:
+                    'Engender [psychological safety](https://rework.withgoogle.com/print/guides/5721312655835136/)',
+            },
+
+            {
+                markdown: 'Focus begets flow, flow begets joy',
+            },
+            {
+                markdown:
+                    '[Elevate improvement of daily work over daily work itself](https://itrevolution.com/the-unicorn-project/)',
+            },
+            {
+                markdown:
+                    '[Embrace change](https://www.amazon.com/gp/product/0321278658)',
+            },
+        ],
         darkColor: drinksDark,
         lightColor: drinksLight,
     },
     {
-        title: '#6',
+        title: 'todo',
         image: snake,
         bullets: [],
         darkColor: snakeDark,
@@ -95,10 +144,6 @@ export const footerLinks = [
         text: 'Contact',
         url:
             'mailto:achristianson@example.com?body=In order to prove that you are a human, please change the email address to use the hostname "pessimistic-it.com".',
-    },
-    {
-        text: 'LinkedIn',
-        url: 'https://www.linkedin.com/in/andreas-christianson-43803844/',
     },
     {
         text: 'Edit this page',
