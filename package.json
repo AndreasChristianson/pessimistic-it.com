@@ -8,7 +8,8 @@
         "clean": "rimraf dist",
         "prebuild": "npm run clean",
         "build": "webpack --mode=production",
-        "start:dev": "webpack serve --mode=development"
+        "start:dev": "webpack serve --mode=development",
+        "prettier": "prettier --write ."
     },
     "repository": {
         "type": "git",
