@@ -8,5 +8,5 @@ export const textStyle = `
 `
 
 export const Text = styled.div`
-    ${textStyle}
+  ${textStyle}
 `

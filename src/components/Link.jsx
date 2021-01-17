@@ -3,20 +3,20 @@ import React from 'react'
 import { textStyle } from './Text'
 
 export const Link = styled.a`
-    ${textStyle}
+  ${textStyle}
 
-    :link {
-    }
+  :link {
+  }
 
-    :visited {
-    }
+  :visited {
+  }
 
-    :focus {
-    }
+  :focus {
+  }
 
-    :hover {
-    }
+  :hover {
+  }
 
-    :active {
-    }
+  :active {
+  }
 `
