@@ -1,20 +1,14 @@
-import bolts from '../images/bucket-of-bolts.png'
-import drinks from '../images/team-time.png'
-import stump from '../images/stump.png'
-import collaboration from '../images/collaboration.png'
-import elegance from '../images/elegance.png'
-import snake from '../images/snake.png'
+import bolts from '../images/bucket-of-bolts.jpeg'
+import stump from '../images/stump.jpeg'
+import collaboration from '../images/collaboration.jpeg'
+import elegance from '../images/elegance.jpeg'
 import {
   boltLight,
   boltDark,
   collaborationDark,
   collaborationLight,
-  drinksDark,
-  drinksLight,
   eleganceDark,
   eleganceLight,
-  snakeDark,
-  snakeLight,
   stumpDark,
   stumpLight,
 } from '../constants/colors'

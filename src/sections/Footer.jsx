@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Link } from '../components/Link'
 import { SectionBackground } from '../components/SectionBackground'
 import { fieldCorn } from '../constants/colors'
-import cornField from '../images/title-background.png'
+import cornField from '../images/title-background.jpeg'
 import { footerLinks } from './content'
 
 const Background = styled(SectionBackground)`

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import cornField from '../images/title-background.png'
+import cornField from '../images/title-background.jpeg'
 import { HighlightedSection } from '../components/Highlight'
 import { SectionBackground } from '../components/SectionBackground'
 import { fieldCorn, fieldSky } from '../constants/colors'
@@ -20,6 +20,7 @@ const Tagline = styled(Text)`
 const FieldOfDreams = styled(SectionBackground)`
   background-image: url(${cornField});
   height: 100vh;
+  max-height: 500px;
   min-height: 300px;
   background-position: center;
   margin-bottom: 2rem;
