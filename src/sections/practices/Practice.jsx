@@ -18,6 +18,7 @@ const Heading = styled(Text)`
 const Image = styled(SectionBackground)`
   background-image: url(${(props) => props.image});
   min-height: max(40vh, 400px);
+  max-height: 500px;
   @media (min-width: ${mobileModeWidth}px) {
     min-width: 400px;
   }
