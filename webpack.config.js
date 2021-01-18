@@ -1,6 +1,10 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
+const GitRevisionPlugin = require('git-revision-webpack-plugin')
+const { DefinePlugin } = require('webpack')
+
+const gitRevisionPlugin = new GitRevisionPlugin()
 
 module.exports = {
   entry: path.join(__dirname, 'src', 'app.js'),
@@ -44,6 +48,12 @@ module.exports = {
     }),
     new CopyPlugin({
       patterns: [{ from: 'static' }],
+    }),
+    gitRevisionPlugin,
+    new DefinePlugin({
+      'VERSION': JSON.stringify(gitRevisionPlugin.version()),
+      'COMMITHASH': JSON.stringify(gitRevisionPlugin.commithash()),
+      'BRANCH': JSON.stringify(gitRevisionPlugin.branch()),
     }),
   ],
   optimization: {

@@ -133,7 +133,7 @@ export const footerLinks = [
       'mailto:achristianson@example.com?body=In order to prove that you are a human, please change the email address to use the hostname "pessimistic-it.com".',
   },
   {
-    text: 'Edit this page',
+    text: VERSION,
     url: 'https://github.com/AndreasChristianson/pessimistic-it.com',
   },
 ]
