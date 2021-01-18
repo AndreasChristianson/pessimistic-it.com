@@ -22,7 +22,6 @@
   },
   "homepage": "https://github.com/AndreasChristianson/pessimistic-it.com#readme",
   "dependencies": {
-    "fontsource-merriweather": "^3.0.9",
     "fontsource-open-sans": "^3.0.9",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
