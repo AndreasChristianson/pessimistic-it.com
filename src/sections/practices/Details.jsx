@@ -4,7 +4,7 @@ import { Practice } from './Practice'
 import { practices } from '../content'
 import { mobileModeWidth } from '../../constants/measurements'
 
-const Container = styled.div`
+const Container = styled.main`
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
