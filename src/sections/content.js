@@ -1,7 +1,7 @@
-import bolts from '../images/bucket-of-bolts.jpeg'
-import stump from '../images/stump.jpeg'
-import collaboration from '../images/collaboration.jpeg'
-import elegance from '../images/elegance.jpeg'
+import bolts from '../images/bucket-of-bolts.webp'
+import stump from '../images/stump.webp'
+import collaboration from '../images/collaboration.webp'
+import elegance from '../images/elegance.webp'
 import {
   boltLight,
   boltDark,

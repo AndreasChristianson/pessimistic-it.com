@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import cornField from '../images/title-background.jpeg'
+import cornField from '../images/title-background.webp'
 import { HighlightedSection } from '../components/Highlight'
 import { SectionBackground } from '../components/SectionBackground'
 import { fieldCorn, fieldSky } from '../constants/colors'
