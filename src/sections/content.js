@@ -43,7 +43,7 @@ export const practices = [
     ],
   },
   {
-    title: 'Topography matters',
+    title: 'Topology matters',
     image: stump,
     bullets: [
       {
