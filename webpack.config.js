@@ -1,8 +1,8 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
-const GitRevisionPlugin = require('git-revision-webpack-plugin')
-const { DefinePlugin } = require('webpack')
+const { GitRevisionPlugin } = require('git-revision-webpack-plugin')
+const { DefinePlugin, ProvidePlugin } = require('webpack')
 
 const gitRevisionPlugin = new GitRevisionPlugin()
 
@@ -40,6 +40,9 @@ module.exports = {
     ],
   },
   plugins: [
+    new ProvidePlugin({
+      process: 'process/browser',
+    }),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'src', 'index.html'),
       filename: 'index.html',
@@ -51,9 +54,9 @@ module.exports = {
     }),
     gitRevisionPlugin,
     new DefinePlugin({
-      'VERSION': JSON.stringify(gitRevisionPlugin.version()),
-      'COMMITHASH': JSON.stringify(gitRevisionPlugin.commithash()),
-      'BRANCH': JSON.stringify(gitRevisionPlugin.branch()),
+      VERSION: JSON.stringify(gitRevisionPlugin.version()),
+      COMMITHASH: JSON.stringify(gitRevisionPlugin.commithash()),
+      BRANCH: JSON.stringify(gitRevisionPlugin.branch()),
     }),
   ],
   optimization: {
@@ -70,7 +73,7 @@ module.exports = {
     },
   },
   devServer: {
-    contentBase: './dist',
+    // contentBase: './dist',
     open: true,
   },
 }

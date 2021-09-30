@@ -123,8 +123,7 @@ export const practices = [
 export const footerLinks = [
   {
     text: 'Contact',
-    url:
-      'mailto:achristianson@example.com?body=In order to prove that you are a human, please change the email address to use the hostname "pessimistic-it.com".',
+    url: 'mailto:achristianson@example.com?body=In order to prove that you are a human, please change the email address to use the hostname "pessimistic-it.com".',
   },
   {
     text: VERSION,
