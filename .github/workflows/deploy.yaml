@@ -3,6 +3,9 @@ name: deploy to pages
 on:
   push:
     branches: [master]
+    
+concurrency:
+  group: ${{ github.workflow }}
 
 jobs:
   build:
